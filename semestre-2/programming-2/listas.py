@@ -44,3 +44,10 @@ saludo = andres.count("hola") #muestra en que indice se ubica el hola
 index_item = andres.index("hola") #cuenta cuantos hola hay.
 print("posicion del elemeto buscado", index_item)
 print("total de saludos ", saludo)
+
+# para comparar listas y ver lo que no hay en una y si en otra.
+# for num1, num2 in zip(lista1, lista2):
+#     if num1 not in lista1:
+#         lista_combinada.append(num1)
+#     if num2 not in lista2:
+#         lista_combinada.append(num2)
