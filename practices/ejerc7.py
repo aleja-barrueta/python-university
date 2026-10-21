@@ -3,6 +3,7 @@ fruta_usuario = input("Ingresa una fruta: \n")
 for fruit in frutas:
     if fruta_usuario == fruit:
         fruta_index = frutas.index(fruta_usuario)
-        frutas.insert(fruta_index, "kiwi")
-        frutas.remove(fruta_usuario)
+        # frutas.insert(fruta_index, "kiwi")
+        # frutas.remove(fruta_usuario)
+        frutas[fruta_index] = "kiwi"
 print(frutas)
