@@ -55,3 +55,23 @@
 # ejemplo si me solicitan sacar el promedio de una lista sumada:
 # promedio = sum / float(len(precios))
 # print("El promedio es: ", promedio)
+
+
+#para eliminar contenido de listas buscando por nombre o indice  
+# opcion_usuario = input("Ingrese un nombre o indice para ser eliminado: \n")
+#         if opcion_usuario.isnumeric():
+#             indice_product_to_delete = int(opcion_usuario)
+#             if indice_product_to_delete < len(inventario_papeleria):
+#                 inventario_papeleria.pop(indice_product_to_delete)
+#                 print(
+#                     f"El producto fue eliminado.\nEl inventario es: {inventario_papeleria}"
+#                 )
+#             else:
+#                 print("El indice no se encuentra en el inventario.")
+#         elif opcion_usuario in inventario_papeleria:
+#             inventario_papeleria.remove(opcion_usuario)
+#             print(
+#                 f"El producto fue eliminado.\nEl inventario es: {inventario_papeleria}"
+#             )
+#         else:
+#             print("Producto no encontrado.")
