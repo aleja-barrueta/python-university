@@ -37,16 +37,54 @@
 #     incrementador += 1
 # print(f"La lista modificada es: {lista_copy}")
 
-# llenar una lista con frutas con las que ingrese el usuario, despues usa el bucle while recorrer la lista y reemplazar o actualizar la fruta "banana" que debe estar incluido en la lista inicial por la fruta "kiwi"
-lista_frutas = ["banana"]
-print("Su lista inicial es: ", lista_frutas)
-parada = "NO"  # variable para comparar con mi variable de control
-frutas_usuario = input(
-    "Por favor indique el nombre de la fruta que desea agregar a la lista, si no quiere agregar ninguna indique NO: \n"
-)  # variable de control
-while frutas_usuario != parada:
-    lista_frutas.append(frutas_usuario)
-    frutas_usuario = input(
-        "Por favor indique el nombre de la fruta que desea agregar a la lista, si no quiere agregar ninguna indique NO: \n"
-    )
-print(lista_frutas)
+# 1) llenar una lista con frutas con las que ingrese el usuario
+# 2) usa el bucle while recorrer la lista e imprimir la lista
+# 3) reemplazar o actualizar la fruta "banana" que debe estar incluido en la lista inicial por la fruta "kiwi"
+# lista_frutas = ["banana"]  # lista inicial con el elemento banana incluido
+# print("Su lista inicial es: ", lista_frutas)  # mostrar al usuario la lista inicial
+# parada = "NO"  # variable para comparar con mi variable de control
+# frutas_usuario = input(
+#     "Por favor indique el nombre de la fruta que desea agregar a la lista, si no quiere agregar ninguna indique NO: \n"
+# )  # variable de control
+# while frutas_usuario != parada:
+#     lista_frutas.append(frutas_usuario)  # funcion agregar a la lista
+#     frutas_usuario = input(
+#         "Por favor indique el nombre de la fruta que desea agregar a la lista, si no quiere agregar ninguna indique NO: \n"
+#     )  # actualizar variable de control
+
+# iterador = 0  # defino otra variable de control para recorrer la lista
+# # mi otra variable sera lista porque es lo que voy a recorrer
+# # aplicamos condicional menor al tama*o de la lista
+# while iterador < len(lista_frutas):
+#     # operacion solicitada por el problema
+#     fruta = lista_frutas[iterador]  # obtener la fruta del arreglo (los dos son 1 solo.)
+#     if fruta == "banana":  # preguntar si la fruta es == banana
+#         fruta = "kiwi"  # darle el valor de kiwi a fruta, para hacer el cambio de "banana" por "kiwi"
+
+#     iterador += 1 #actualizar manualmente mi variable de control.
+# print(lista_frutas)
+
+# manipulacion de listas:
+numeros = []
+for num in range(1, 11):
+    numeros.append(num)
+iterador = 0
+print("Su lista es: ")
+while iterador < len(numeros):
+    print(numeros[iterador], end=" , ")
+    iterador += 1
+
+for num in numeros:
+    if num % 2 == 0:
+        numeros.remove(num)
+
+# iterador = 0  # variable de control
+# # mi variable para condicionar ya existe es, numeros
+# while iterador < len(numeros):
+#     num = numeros[iterador]
+#     if num % 2 == 0:
+#         numeros.remove(num)
+#     iterador += 1
+
+
+# print(f"Su lista sin numeros pares es: {numeros}")
