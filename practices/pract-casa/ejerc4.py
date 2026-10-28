@@ -1,12 +1,13 @@
 # contando elementos
-numeros = [1, 5, 8, 3, 4, 5, 4, 6, 7, 5, 8]
-
-num_usuario = int(input("Por favor ingresa un numero menor a 10: \n"))
-# contador = 0
-# for num in numeros:
-#     if num == num_usuario:
-#         contador += 1
-
-
-
-print(f"Su numero se repitio {contador} veces en la lista.")
+numeros = [9, 4, 9]  # variable que voy a comparar con mi variable de control
+num_usuario = int(
+    input("Por favor ingrese un numero menor a 10 \n")
+)  # variable que voy a comparar con los elementos de mi lista inicial.
+iterador = 0  # variable de control
+contador = 0  # mi variable que cuenta
+while iterador < len(numeros):
+    num = numeros[iterador]
+    if num == num_usuario:
+        contador += 1
+    iterador += 1
+print(f"Su numero se repite {contador} veces en la lista")
