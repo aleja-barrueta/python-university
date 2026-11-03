@@ -10,4 +10,5 @@ while iterador < len(numeros):
     if num == num_usuario:
         contador += 1
     iterador += 1
+
 print(f"Su numero se repite {contador} veces en la lista")
