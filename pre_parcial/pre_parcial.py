@@ -42,4 +42,6 @@ while menu != "6":
               print("No se encontro")
 
     menu = input("Ingrese una opcion. 1- Registrar, 2- Consultar, 3- Buscar por nombre, 4- Modificar, 5- eliminar, 6- Salir")
+
+
     
