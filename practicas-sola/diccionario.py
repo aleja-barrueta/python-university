@@ -14,7 +14,6 @@ def definirEstudiante(estaCreando):
     edad_estudiante = input("Ingrese la edad del estudiante:\n")
     materia_estudiante = input("Ingrese la materia del estudiante:\n")
     if estaCreando:
-
         guardar_o_modificar_estudiante(
             documento_estudiante,
             nombre_estudiante,
@@ -42,31 +41,31 @@ menu = input(
 
 while menu != "8":
     if menu == "1":
-        # documento_estudiante = input("Ingrese el documento del estudiante:\n")
-        # nombre_estudiante = input("Ingrese el nombre del estudiante:\n")
-        # edad_estudiante = input("Ingrese la edad del estudiante:\n")
-        # materia_estudiante = input("Ingrese la materia del estudiante:\n")
-        # guardar_o_modificar_estudiante(
-        #     documento_estudiante,
-        #     nombre_estudiante,
-        #     edad_estudiante,
-        #     materia_estudiante,
-        # )
-        # print(estudiantes)
-        definirEstudiante(True)
+        documento_estudiante = input("Ingrese el documento del estudiante:\n")
+        nombre_estudiante = input("Ingrese el nombre del estudiante:\n")
+        edad_estudiante = input("Ingrese la edad del estudiante:\n")
+        materia_estudiante = input("Ingrese la materia del estudiante:\n")
+        guardar_o_modificar_estudiante(
+            documento_estudiante,
+            nombre_estudiante,
+            edad_estudiante,
+            materia_estudiante,
+        )
+        print(estudiantes)
+        # definirEstudiante(True)
 
     if menu == "2":
-        # documento_buscar = input("Ingrese el documento :\n")
-        # if documento_buscar in estudiantes:
-        #     nombre_estudiante = input("Ingrese el nombre del estudiante:\n")
-        #     edad_estudiante = input("Ingrese la edad del estudiante:\n")
-        #     materia_estudiante = input("Ingrese la materia del estudiante:\n")
-        #     guardar_o_modificar_estudiante(
-        #         documento_buscar, nombre_estudiante, edad_estudiante, materia_estudiante
-        #     )
-        # else:
-        #     print("El documeto no se encuentra registrado.")
-        definirEstudiante(False)
+        documento_buscar = input("Ingrese el documento :\n")
+        if documento_buscar in estudiantes:
+            nombre_estudiante = input("Ingrese el nombre del estudiante:\n")
+            edad_estudiante = input("Ingrese la edad del estudiante:\n")
+            materia_estudiante = input("Ingrese la materia del estudiante:\n")
+            guardar_o_modificar_estudiante(
+                documento_buscar, nombre_estudiante, edad_estudiante, materia_estudiante
+            )
+        else:
+            print("El documeto no se encuentra registrado.")
+        # definirEstudiante(False)
 
     if menu == "3":
         documento_buscar = input("Ingrese el documento a buscar:\n")
