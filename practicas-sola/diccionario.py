@@ -1,11 +1,11 @@
 # crear un menu interactivo el cual permita mostrar los estudiantes, modificar, crear, y buscar por numero de documento, nombre, edad, materia.
 # el diccionario de estudiantes debe usar el numero de documento como llave, cada estudiante tendra nombre, edad, materia. Usar funciones para no repetir codigo.
 
-estudiantes = {}
+estudiantes = {} #primero defino mi diccionario
 
 
-def guardar_o_modificar_estudiante(documento, nombre, edad, materia):
-    estudiantes[documento] = {"nombre": nombre, "edad": edad, "materia": materia}
+def guardar_o_modificar_estudiante(documento, nombre, edad, materia): #segundo defino mi funcion
+    estudiantes[documento] = {"nombre": nombre, "edad": edad, "materia": materia} #le doy un indice a mi diccionario, y a ese indice le asigno un diccionario interno
 
 
 def definirEstudiante(estaCreando):
@@ -36,9 +36,9 @@ def definirEstudiante(estaCreando):
 
 menu = input(
     "Ingrese la funcion que desea realizar\n1-Crear\n2-Modificar\n3-Buscar por numero de documento\n4-Buscar por nombre\n5-Buscar por edad\n6-Buscar por cualquier parametro del estudiante\n7-Buscar por materia\n8-Salir\n"
-)
+) #defino mi variable de control
 
-
+#aplico while.
 while menu != "8":
     if menu == "1":
         documento_estudiante = input("Ingrese el documento del estudiante:\n")
